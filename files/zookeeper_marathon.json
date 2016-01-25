@@ -1,0 +1,20 @@
+{
+	"_Author": "Ioannis Petrousov",
+	"_Email": "petrousov@gmail.com",
+	"id": "zookeeper.marathon", 
+	"cmd": "bash /opt/bootstrap.sh",
+	"container": {
+	"type": "DOCKER",
+	"docker": {
+		"image": "192.168.1.235:5000/centos-zookeeper",
+		"network": "BRIDGE",
+		"portMappings": [
+			{"containerPort": 2181, "hostPort": 0, "servicePort": 40000},
+			{"containerPort": 22, "hostPort": 0, "servicePort": 22222}
+	      ]
+      }
+    },
+	"cpus": 0.5,
+	"mem": 1024.0,
+	"instances": 1
+}
