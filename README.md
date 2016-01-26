@@ -1,8 +1,9 @@
 # About
 Standalone Zookeeper container to deploy on Mesos cluster with Marathon and route with HAProxy.
 On container deployment, a bootstrap script is executed and wraps the zookeeper server script.
+Base operating system is Centos.
 
-# Setup
+# Usage
 1. Build the image
 
         00_build_image.sh
